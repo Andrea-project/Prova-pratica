@@ -1,2 +1,2 @@
 # Prova-pratica
-Prova pratica di Matteo Cuogo 2111013 e Andrea Scantamburlo 2113201
+Prova pratica di Matteo Cuogo e Andrea Scantamburlo
