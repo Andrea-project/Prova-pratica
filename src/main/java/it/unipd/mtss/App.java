@@ -3,13 +3,17 @@
 // Andrea Scantamburlo 2113201
 // //////////////////////////////////////////////////////////////////
 package it.unipd.mtss;
-
+import java.util.Scanner;
 
 public class App 
 {
     public static void main( String[] args )
     {
-        
-        System.out.println( "Hello World!" );
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Inserisci un numero intero da convertire: ");
+        int numero = scanner.nextInt();
+        System.out.println(IntegerToRoman.convert(numero));
+        System.out.println(RomanPrinter.print(numero));
+        scanner.close();
     }
 }

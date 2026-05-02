@@ -12,20 +12,32 @@ public class RomanPrinterTest {
 
     @Test
     public void testPrint1() {
-        String output = RomanPrinter.print(1);
-        verifyOutput(output);
+        verifyOutput(RomanPrinter.print(1));
     }
 
     @Test
     public void testPrint2() {
-        String output = RomanPrinter.print(2);
-        verifyOutput(output);
+        verifyOutput(RomanPrinter.print(2));
     }
 
     @Test
     public void testPrint3() {
-        String output = RomanPrinter.print(3);
-        verifyOutput(output);
+        verifyOutput(RomanPrinter.print(3));
+    }
+
+    @Test
+    public void testPrint4() {
+        verifyOutput(RomanPrinter.print(4));
+    }
+
+    @Test
+    public void testPrint5() {
+        verifyOutput(RomanPrinter.print(5));
+    }
+
+    @Test
+    public void testPrint6() {
+        verifyOutput(RomanPrinter.print(6));
     }
 
     // Metodo helper per evitare ripetizioni

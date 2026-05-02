@@ -6,10 +6,15 @@ package it.unipd.mtss;
 
 public class IntegerToRoman {
   public static String convert(int number){
-  String res = "";
-    for(int i = 0; i < number; i++) {
-        res += "I";
+        int[] values = {5, 4, 1};
+        String[] symbols = {"V", "IV", "I"};
+        String res = "";
+        for (int i = 0; i < values.length; i++) {
+            while (number >= values[i]) {
+                res += symbols[i];
+                number -= values[i];
+            }
+        }
+        return res;
     }
-  return res;
-  }
 }
