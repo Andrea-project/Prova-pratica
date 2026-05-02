@@ -6,8 +6,10 @@ package it.unipd.mtss;
 
 public class IntegerToRoman {
   public static String convert(int number){
-  // TODO
-  
-  return null;
+  String res = "";
+    for(int i = 0; i < number; i++) {
+        res += "I";
+    }
+  return res;
   }
 }
