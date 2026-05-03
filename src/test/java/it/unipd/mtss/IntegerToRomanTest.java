@@ -36,7 +36,6 @@ public void testPrimiVentiNumeri(){
     assertEquals("XX", IntegerToRoman.convert(20));
 }
 
-
 @Test
 public void testFinoATrenta(){
     assertEquals("XXI", IntegerToRoman.convert(21));
@@ -61,5 +60,28 @@ public void testFinoACinquanta(){
     assertEquals("XLV", IntegerToRoman.convert(45));
     assertEquals("XLIX", IntegerToRoman.convert(49));
     assertEquals("L", IntegerToRoman.convert(50));
+}
+
+@Test
+public void testFinoASessanta(){
+    assertEquals("LX", IntegerToRoman.convert(60));
+    assertEquals("LXIV", IntegerToRoman.convert(64));
+    assertEquals("LXIX", IntegerToRoman.convert(69));
+}
+
+@Test
+public void testFinoAOttanta(){
+    assertEquals("LXX", IntegerToRoman.convert(70));
+    assertEquals("LXXV", IntegerToRoman.convert(75));
+    assertEquals("LXXX", IntegerToRoman.convert(80));
+}
+
+@Test
+public void testFinoACento(){
+    assertEquals("LXXXIX", IntegerToRoman.convert(89));
+    assertEquals("XC", IntegerToRoman.convert(90));
+    assertEquals("XCIV", IntegerToRoman.convert(94));
+    assertEquals("XCIX", IntegerToRoman.convert(99));
+    assertEquals("C", IntegerToRoman.convert(100));
 }
 }

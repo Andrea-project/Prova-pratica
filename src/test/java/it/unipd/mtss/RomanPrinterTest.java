@@ -70,4 +70,49 @@ public void testPrintFinoACinquanta(){
     verifyOutput(RomanPrinter.print(49));
     verifyOutput(RomanPrinter.print(50));
 }
+
+@Test
+public void testPrintFinoASessanta(){
+    verifyOutput(RomanPrinter.print(51));
+    verifyOutput(RomanPrinter.print(54));
+    verifyOutput(RomanPrinter.print(55));
+    verifyOutput(RomanPrinter.print(59));
+    verifyOutput(RomanPrinter.print(60));
+}
+
+@Test
+public void testPrintFinoASettanta(){
+    verifyOutput(RomanPrinter.print(61));
+    verifyOutput(RomanPrinter.print(64));
+    verifyOutput(RomanPrinter.print(65));
+    verifyOutput(RomanPrinter.print(69));
+    verifyOutput(RomanPrinter.print(70));
+}
+
+@Test
+public void testPrintFinoAOttanta(){
+    verifyOutput(RomanPrinter.print(71));
+    verifyOutput(RomanPrinter.print(74));
+    verifyOutput(RomanPrinter.print(75));
+    verifyOutput(RomanPrinter.print(79));
+    verifyOutput(RomanPrinter.print(80));
+}
+
+@Test
+public void testPrintFinoANovanta(){
+    verifyOutput(RomanPrinter.print(81));
+    verifyOutput(RomanPrinter.print(84));
+    verifyOutput(RomanPrinter.print(85));
+    verifyOutput(RomanPrinter.print(89));
+    verifyOutput(RomanPrinter.print(90));
+}
+
+@Test
+public void testPrintFinoACento(){
+    verifyOutput(RomanPrinter.print(91));
+    verifyOutput(RomanPrinter.print(94));
+    verifyOutput(RomanPrinter.print(95));
+    verifyOutput(RomanPrinter.print(99));
+    verifyOutput(RomanPrinter.print(100));
+}
 }
