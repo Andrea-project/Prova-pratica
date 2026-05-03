@@ -7,8 +7,8 @@ package it.unipd.mtss;
 public class RomanPrinter {
 
     public static String print(int num) {
-        if (num < 1 || num > 6) {
-            throw new IllegalArgumentException("Al momento supportiamo solo i numeri 1-6");
+        if (num < 1 || num > 10) {
+            throw new IllegalArgumentException("Al momento supportiamo solo i numeri 1-10");
         }
         return printAsciiArt(IntegerToRoman.convert(num));
     }
@@ -18,7 +18,6 @@ public class RomanPrinter {
         for (char c : romanNumber.toCharArray()) {
             String[] art = getAsciiArtForChar(c);
             for (int i = 0; i < 6; i++) {
-                
                 lines[i] += art[i] + "  "; 
             }
         }
@@ -44,6 +43,16 @@ public class RomanPrinter {
                 "  \\ \\/ /  ",
                 "   \\  /   ",
                 "    \\/    "
+            };
+        }
+        else if (c == 'X') {
+            return new String[]{
+                "__    __", // 10 caratteri
+                "\\ \\  / /", // 10 caratteri
+                " \\ \\/ / ", // 10 caratteri
+                "  >  <    ", // 10 caratteri
+                " / /\\ \\  ", // 10 caratteri
+                "/_/  \\_\\ "  // 10 caratteri
             };
         }
         throw new IllegalArgumentException("Carattere non supportato per ora: " + c);

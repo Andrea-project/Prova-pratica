@@ -11,36 +11,25 @@ import org.junit.Test;
 public class RomanPrinterTest {
 
     @Test
-    public void testPrint1() {
+    public void testPrintPrimiTreNumeri() {
         verifyOutput(RomanPrinter.print(1));
-    }
-
-    @Test
-    public void testPrint2() {
         verifyOutput(RomanPrinter.print(2));
-    }
-
-    @Test
-    public void testPrint3() {
         verifyOutput(RomanPrinter.print(3));
     }
-
     @Test
-    public void testPrint4() {
+    public void testPrintPrimiSeiNumeri() {
         verifyOutput(RomanPrinter.print(4));
-    }
-
-    @Test
-    public void testPrint5() {
         verifyOutput(RomanPrinter.print(5));
-    }
-
-    @Test
-    public void testPrint6() {
         verifyOutput(RomanPrinter.print(6));
     }
+    @Test
+    public void testPrintPrimiDieciNumeri(){
+        verifyOutput(RomanPrinter.print(7));
+        verifyOutput(RomanPrinter.print(8));
+        verifyOutput(RomanPrinter.print(9));
+        verifyOutput(RomanPrinter.print(10));
+    }
 
-    // Metodo helper per evitare ripetizioni
     private void verifyOutput(String output) {
         assertNotNull("L'output non deve essere nullo", output);
         assertFalse("L'output non deve essere vuoto", output.isEmpty());
