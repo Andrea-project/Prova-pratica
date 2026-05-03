@@ -84,4 +84,20 @@ public void testFinoACento(){
     assertEquals("XCIX", IntegerToRoman.convert(99));
     assertEquals("C", IntegerToRoman.convert(100));
 }
+
+//non testiamo tutto altrimenti sono altre 200 assert
+
+@Test
+public void testFinoAQuattrocento(){
+    assertEquals("CC", IntegerToRoman.convert(200));
+    assertEquals("CCC", IntegerToRoman.convert(300));
+    assertEquals("CD", IntegerToRoman.convert(400));
+}
+
+@Test
+public void testFinoACinquecento(){
+    assertEquals("CDXCIX", IntegerToRoman.convert(499));
+    assertEquals("D", IntegerToRoman.convert(500));
+}
+
 }

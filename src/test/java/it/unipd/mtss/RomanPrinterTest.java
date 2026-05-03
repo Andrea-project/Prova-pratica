@@ -115,4 +115,11 @@ public void testPrintFinoACento(){
     verifyOutput(RomanPrinter.print(99));
     verifyOutput(RomanPrinter.print(100));
 }
+
+@Test
+public void testPrintFinoACinquecento(){
+    verifyOutput(RomanPrinter.print(400));
+    verifyOutput(RomanPrinter.print(444));
+    verifyOutput(RomanPrinter.print(500));
+}
 }
