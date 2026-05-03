@@ -44,4 +44,30 @@ public class RomanPrinterTest {
         assertNotNull("L'output non deve essere nullo", output);
         assertFalse("L'output non deve essere vuoto", output.isEmpty());
     }
+
+    @Test
+public void testPrintFinoATrenta(){
+    verifyOutput(RomanPrinter.print(21));
+    verifyOutput(RomanPrinter.print(24));
+    verifyOutput(RomanPrinter.print(25));
+    verifyOutput(RomanPrinter.print(29));
+    verifyOutput(RomanPrinter.print(30));
+}
+
+@Test
+public void testPrintFinoAQuaranta(){
+    verifyOutput(RomanPrinter.print(31));
+    verifyOutput(RomanPrinter.print(34));
+    verifyOutput(RomanPrinter.print(39));
+    verifyOutput(RomanPrinter.print(40));
+}
+
+@Test
+public void testPrintFinoACinquanta(){
+    verifyOutput(RomanPrinter.print(41));
+    verifyOutput(RomanPrinter.print(44));
+    verifyOutput(RomanPrinter.print(45));
+    verifyOutput(RomanPrinter.print(49));
+    verifyOutput(RomanPrinter.print(50));
+}
 }
