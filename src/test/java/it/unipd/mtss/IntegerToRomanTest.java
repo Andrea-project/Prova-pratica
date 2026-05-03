@@ -25,5 +25,15 @@ public void testPrimiDieciNumeri(){
     assertEquals("IX", IntegerToRoman.convert(9));
     assertEquals("X", IntegerToRoman.convert(10));
 }
+//da qua in poi dato i numeri sono tanti controllo solo i casi significativi
+@Test
+public void testPrimiVentiNumeri(){
+    assertEquals("XI", IntegerToRoman.convert(11));
+    assertEquals("XIV", IntegerToRoman.convert(14));
+    assertEquals("XV", IntegerToRoman.convert(15));
+    assertEquals("XVI", IntegerToRoman.convert(16));
+    assertEquals("XIX", IntegerToRoman.convert(19));
+    assertEquals("XX", IntegerToRoman.convert(20));
+}
 
 }

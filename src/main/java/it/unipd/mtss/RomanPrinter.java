@@ -7,7 +7,7 @@ package it.unipd.mtss;
 public class RomanPrinter {
 
     public static String print(int num) {
-        if (num < 1 || num > 10) {
+        if (num < 1 || num > 20) {
             throw new IllegalArgumentException("Al momento supportiamo solo i numeri 1-10");
         }
         return printAsciiArt(IntegerToRoman.convert(num));
@@ -25,36 +25,39 @@ public class RomanPrinter {
     }
 
     private static String[] getAsciiArtForChar(char c) {
+        // Ogni riga è lunga esattamente 10 caratteri.
+        // Questo garantisce che tutto sia perfettamente incolonnato.
+        
         if (c == 'I') {
             return new String[]{
-                "  _  ", 
-                " | | ", 
-                " | | ", 
-                " | | ", 
-                " | | ", 
-                " |_| "
+                "  _____   ", 
+                " |_   _|  ", 
+                "   | |    ", 
+                "   | |    ", 
+                "  _| |_   ", 
+                " |_____|  "
             };
         } 
         else if (c == 'V') {
             return new String[]{
-                "__      __",
-                "\\ \\    / /",
-                " \\ \\  / / ",
-                "  \\ \\/ /  ",
-                "   \\  /   ",
+                "__      __", 
+                "\\ \\    / /", 
+                " \\ \\  / / ", 
+                "  \\ \\/ /  ", 
+                "   \\  /   ", 
                 "    \\/    "
             };
         }
         else if (c == 'X') {
             return new String[]{
-                "__    __", // 10 caratteri
-                "\\ \\  / /", // 10 caratteri
-                " \\ \\/ / ", // 10 caratteri
-                "  >  <    ", // 10 caratteri
-                " / /\\ \\  ", // 10 caratteri
-                "/_/  \\_\\ "  // 10 caratteri
+                "__    __  ", 
+                "\\ \\  / /  ", 
+                " \\ \\/ /   ", 
+                "  >  <    ", 
+                " / /\\ \\   ", 
+                "/_/  \\_\\  " 
             };
         }
-        throw new IllegalArgumentException("Carattere non supportato per ora: " + c);
+        throw new IllegalArgumentException("Carattere non supportato: " + c);
     }
 }

@@ -29,6 +29,16 @@ public class RomanPrinterTest {
         verifyOutput(RomanPrinter.print(9));
         verifyOutput(RomanPrinter.print(10));
     }
+    @Test
+    //da qua in poi dato i numeri sono tanti controllo solo i casi significativi
+    public void testPrintPrimiVentiNumeri(){
+        verifyOutput(RomanPrinter.print(11));
+        verifyOutput(RomanPrinter.print(14));
+        verifyOutput(RomanPrinter.print(15));
+        verifyOutput(RomanPrinter.print(16));
+        verifyOutput(RomanPrinter.print(19));
+        verifyOutput(RomanPrinter.print(20));
+    }
 
     private void verifyOutput(String output) {
         assertNotNull("L'output non deve essere nullo", output);
