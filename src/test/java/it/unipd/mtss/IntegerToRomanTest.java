@@ -100,4 +100,11 @@ public void testFinoACinquecento(){
     assertEquals("D", IntegerToRoman.convert(500));
 }
 
+@Test
+public void testFinoAMille(){
+    assertEquals("CM", IntegerToRoman.convert(900));
+    assertEquals("CMXV", IntegerToRoman.convert(915));
+    assertEquals("CMXCIX", IntegerToRoman.convert(999));
+    assertEquals("M", IntegerToRoman.convert(1000));
+}
 }

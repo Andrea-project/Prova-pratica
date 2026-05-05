@@ -40,86 +40,96 @@ public class RomanPrinterTest {
         verifyOutput(RomanPrinter.print(20));
     }
 
+
+    @Test
+    public void testPrintFinoATrenta(){
+        verifyOutput(RomanPrinter.print(21));
+        verifyOutput(RomanPrinter.print(24));
+        verifyOutput(RomanPrinter.print(25));
+        verifyOutput(RomanPrinter.print(29));
+        verifyOutput(RomanPrinter.print(30));
+    }
+
+    @Test
+    public void testPrintFinoAQuaranta(){
+        verifyOutput(RomanPrinter.print(31));
+        verifyOutput(RomanPrinter.print(34));
+        verifyOutput(RomanPrinter.print(39));
+        verifyOutput(RomanPrinter.print(40));
+    }
+
+    @Test
+    public void testPrintFinoACinquanta(){
+        verifyOutput(RomanPrinter.print(41));
+        verifyOutput(RomanPrinter.print(44));
+        verifyOutput(RomanPrinter.print(45));
+        verifyOutput(RomanPrinter.print(49));
+        verifyOutput(RomanPrinter.print(50));
+    }
+
+    @Test
+    public void testPrintFinoASessanta(){
+        verifyOutput(RomanPrinter.print(51));
+        verifyOutput(RomanPrinter.print(54));
+        verifyOutput(RomanPrinter.print(55));
+        verifyOutput(RomanPrinter.print(59));
+        verifyOutput(RomanPrinter.print(60));
+    }
+
+    @Test
+    public void testPrintFinoASettanta(){
+        verifyOutput(RomanPrinter.print(61));
+        verifyOutput(RomanPrinter.print(64));
+        verifyOutput(RomanPrinter.print(65));
+        verifyOutput(RomanPrinter.print(69));
+        verifyOutput(RomanPrinter.print(70));
+    }
+
+    @Test
+    public void testPrintFinoAOttanta(){
+        verifyOutput(RomanPrinter.print(71));
+        verifyOutput(RomanPrinter.print(74));
+        verifyOutput(RomanPrinter.print(75));
+        verifyOutput(RomanPrinter.print(79));
+        verifyOutput(RomanPrinter.print(80));
+    }
+
+    @Test
+    public void testPrintFinoANovanta(){
+        verifyOutput(RomanPrinter.print(81));
+        verifyOutput(RomanPrinter.print(84));
+        verifyOutput(RomanPrinter.print(85));
+        verifyOutput(RomanPrinter.print(89));
+        verifyOutput(RomanPrinter.print(90));
+    }
+
+    @Test
+    public void testPrintFinoACento(){
+        verifyOutput(RomanPrinter.print(91));
+        verifyOutput(RomanPrinter.print(94));
+        verifyOutput(RomanPrinter.print(95));
+        verifyOutput(RomanPrinter.print(99));
+        verifyOutput(RomanPrinter.print(100));
+    }
+
+    @Test
+    public void testPrintFinoACinquecento(){
+        verifyOutput(RomanPrinter.print(400));
+        verifyOutput(RomanPrinter.print(444));
+        verifyOutput(RomanPrinter.print(500));
+    }
+
+    @Test
+    public void testPrintFinoAMille(){
+        verifyOutput(RomanPrinter.print(501));
+        verifyOutput(RomanPrinter.print(999));
+        verifyOutput(RomanPrinter.print(1000));
+    }
+
+
+
     private void verifyOutput(String output) {
         assertNotNull("L'output non deve essere nullo", output);
         assertFalse("L'output non deve essere vuoto", output.isEmpty());
     }
-
-    @Test
-public void testPrintFinoATrenta(){
-    verifyOutput(RomanPrinter.print(21));
-    verifyOutput(RomanPrinter.print(24));
-    verifyOutput(RomanPrinter.print(25));
-    verifyOutput(RomanPrinter.print(29));
-    verifyOutput(RomanPrinter.print(30));
-}
-
-@Test
-public void testPrintFinoAQuaranta(){
-    verifyOutput(RomanPrinter.print(31));
-    verifyOutput(RomanPrinter.print(34));
-    verifyOutput(RomanPrinter.print(39));
-    verifyOutput(RomanPrinter.print(40));
-}
-
-@Test
-public void testPrintFinoACinquanta(){
-    verifyOutput(RomanPrinter.print(41));
-    verifyOutput(RomanPrinter.print(44));
-    verifyOutput(RomanPrinter.print(45));
-    verifyOutput(RomanPrinter.print(49));
-    verifyOutput(RomanPrinter.print(50));
-}
-
-@Test
-public void testPrintFinoASessanta(){
-    verifyOutput(RomanPrinter.print(51));
-    verifyOutput(RomanPrinter.print(54));
-    verifyOutput(RomanPrinter.print(55));
-    verifyOutput(RomanPrinter.print(59));
-    verifyOutput(RomanPrinter.print(60));
-}
-
-@Test
-public void testPrintFinoASettanta(){
-    verifyOutput(RomanPrinter.print(61));
-    verifyOutput(RomanPrinter.print(64));
-    verifyOutput(RomanPrinter.print(65));
-    verifyOutput(RomanPrinter.print(69));
-    verifyOutput(RomanPrinter.print(70));
-}
-
-@Test
-public void testPrintFinoAOttanta(){
-    verifyOutput(RomanPrinter.print(71));
-    verifyOutput(RomanPrinter.print(74));
-    verifyOutput(RomanPrinter.print(75));
-    verifyOutput(RomanPrinter.print(79));
-    verifyOutput(RomanPrinter.print(80));
-}
-
-@Test
-public void testPrintFinoANovanta(){
-    verifyOutput(RomanPrinter.print(81));
-    verifyOutput(RomanPrinter.print(84));
-    verifyOutput(RomanPrinter.print(85));
-    verifyOutput(RomanPrinter.print(89));
-    verifyOutput(RomanPrinter.print(90));
-}
-
-@Test
-public void testPrintFinoACento(){
-    verifyOutput(RomanPrinter.print(91));
-    verifyOutput(RomanPrinter.print(94));
-    verifyOutput(RomanPrinter.print(95));
-    verifyOutput(RomanPrinter.print(99));
-    verifyOutput(RomanPrinter.print(100));
-}
-
-@Test
-public void testPrintFinoACinquecento(){
-    verifyOutput(RomanPrinter.print(400));
-    verifyOutput(RomanPrinter.print(444));
-    verifyOutput(RomanPrinter.print(500));
-}
 }
